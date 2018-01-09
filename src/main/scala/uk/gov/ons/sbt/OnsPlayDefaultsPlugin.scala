@@ -11,7 +11,6 @@ import play.sbt.PlayScala
 import play.sbt.routes.RoutesKeys.{routesGenerator, routesImport}
 import com.typesafe.sbt.packager.universal.UniversalPlugin
 
-//TODO: Check if Artifactory settings required
 object OnsPlayDefaultsPlugin extends AutoPlugin {
 
   override def trigger = allRequirements
