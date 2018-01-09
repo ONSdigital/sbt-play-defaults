@@ -2,7 +2,6 @@ package uk.gov.ons.sbt
 
 import sbt.Keys._
 import sbt._
-import sbt.plugins.JvmPlugin
 import sbtassembly.AssemblyPlugin.autoImport.{MergeStrategy, assembly, assemblyJarName, assemblyMergeStrategy}
 import sbtassembly.{AssemblyPlugin, PathList}
 import play.routes.compiler.InjectedRoutesGenerator
