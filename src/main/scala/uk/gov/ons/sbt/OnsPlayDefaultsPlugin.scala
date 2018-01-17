@@ -23,11 +23,7 @@ object OnsPlayDefaultsPlugin extends AutoPlugin {
   lazy val ITest: Configuration = config("it") extend Test
 
   private[this] val playSettings = Seq(
-    routesImport += "extensions.Binders._",
-    //moduleName := "sbr-admin-data",
     description := "<description>",
-    //    libraryDependencies ++= devDeps,
-    // di router -> swagger
     routesGenerator := InjectedRoutesGenerator,
     dependencyOverrides += "com.google.guava" % "guava" % "14.0.1",
     unmanagedResourceDirectories in Test <+= baseDirectory(_ / "target/web/public/test")
